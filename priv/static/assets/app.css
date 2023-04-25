@@ -1422,6 +1422,11 @@ select {
   letter-spacing: -0.05em;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-brand {
   --tw-text-opacity: 1;
   color: rgb(253 79 0 / var(--tw-text-opacity));
@@ -1470,11 +1475,6 @@ select {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .antialiased {

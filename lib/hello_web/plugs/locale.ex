@@ -6,6 +6,7 @@ defmodule HelloWeb.Plugs.Locale do
   def init(default), do: default
 
   def call(%Plug.Conn{params: %{"locale" => loc}} = conn, _default) when loc in @locales do
+    Gettext.put_locale(HelloWeb.Gettext, loc)
     assign(conn, :locale, loc)
   end
 
